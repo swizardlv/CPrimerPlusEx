@@ -7,5 +7,7 @@ int main(int argc, char const *argv[])
 	printf("%f can be written %e\n",aboat,aboat);
 	printf("%f can be written %e\n",abet,abet );
 	printf("%Lf can be written %Le\n",dip,dip );
+	float toobig=3.4e38*100.0f;
+	printf("%f\n",toobig );
 	return 0;
 }
