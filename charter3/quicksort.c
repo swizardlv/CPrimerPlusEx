@@ -24,12 +24,12 @@ void printArray(int array[],int length)
 void quickSort(int array[],int left,int right)
 {
 	
-		printf("overall left:%d right:%d\n",left,right );
+		
 		int base = array[left]; 
 		int _left = left;
 		int _right = right;
 		while(_left<=_right){
-			printf("left:%d right:%d\n",_left,_right );
+			
 			for (int j = _right; j >=_left; j--)
 			{
 				if (array[j]<base)
@@ -50,11 +50,11 @@ void quickSort(int array[],int left,int right)
 			
 			if (array[_left]>array[_right])
 			{
-				printf("before exchange: %d,%d\n", array[_left],array[_right]);
+				
 				int temp=array[_left];
 				array[_left]=array[_right];
 				array[_right]=temp;
-				printf("after exchange: %d,%d\n", array[_left],array[_right]);
+				
 			}
 			
 			if (_left==_right || _left==(_right-1))
@@ -73,7 +73,7 @@ void quickSort(int array[],int left,int right)
 			int temp=array[left];
 			array[left]=array[_left];
 			array[_left]=temp;
-			print(array,left,right);
+		
 			
 			
 		}
