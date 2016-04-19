@@ -99,8 +99,8 @@ int main(int argc, char const *argv[])
 	{
 		scanf("%d",&array[i]);
 	}
-	quickSort(array,0,ARRAY_SIZE(array)-1);
-	printArray(array,ARRAY_SIZE(array));
+	quickSort(array,0,N-1);
+	printArray(array,N);
 	return 0;
 }
 
