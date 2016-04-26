@@ -3,4 +3,11 @@
 使用"%s"的scanf只会把单词当成输入而不是句子，遇到空格会中止。需要用gets()来读取句子。
 strlen包含于string.h。
 sizeof 返回的结果比strlen大1。因为sizeof 包含了结尾的'\0'。
-在c90当中，定义了const 来定义常量。
+在c99当中，定义了const 来定义常量。
+在c99当中，实行“趋零截尾”就意味着-3.8转为整数会是-3而不是-4。
+sizeof返回一个size_t类型的数，是一个无符号整数类型。
+在c语言当中可以通过typedef来实现类型的别的名，例如
+```
+typedef double real;
+real deal;
+```
