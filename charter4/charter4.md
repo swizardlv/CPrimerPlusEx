@@ -11,3 +11,5 @@ sizeof返回一个size_t类型的数，是一个无符号整数类型。
 typedef double real;
 real deal;
 ```
+在c99当中，使用_Bool来定义布尔类型的变量。
+关系运算符的优先级要大于赋值运算符，所以 x=y>2 等同于x=(y>2)。
